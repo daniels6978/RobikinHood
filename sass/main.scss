@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background-color: black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 8%;
+
+  .burger-btn {
+    position: relative;
+    left: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: none;
+    border: 1px solid transparent;
+    z-index: 1000;
+    cursor: pointer;
+
+    &:hover {
+      .burger-btn__bars::after,
+      .burger-btn__bars::before {
+        width: 100%;
+      }
+    }
+
+    &__box {
+      position: relative;
+      width: 40px;
+      height: 30px;
+    }
+    &__bars,
+    &__bars::after,
+    &__bars::before {
+      position: absolute;
+      left: 0;
+      height: 3px;
+      content: "";
+      background-color: #da2a2a;
+      transition: width 0.3s;
+    }
+    &__bars {
+      width: 100%;
+      &::after {
+        top: 13px;
+        width: 50%;
+      }
+      &::before {
+        top: 27px;
+        width: 30%;
+      }
+    }
+  }
+
+  &__items {
+    display: none;
+    position: relative;
+    left: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &__item {
+    color: white;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+      background-color: #da2a2a;
+    }
+  }
+
+  &__title {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.8rem;
+    text-transform: uppercase;
+  }
+
+  &__mobile {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+    background-image: linear-gradient(45deg, rgb(39, 47, 59), rgb(32, 27, 59));
+    z-index: 100;
+    &--item {
+      position: relative;
+      display: block;
+      margin: 0.5em 0;
+      padding: 0.5em 2em;
+      font-size: 2.8rem;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+      &:hover {
+        background-color: #da2a2a;
+      }
+    }
+    &--active {
+      transform: translateX(0);
+    }
+  }
+
+  &--active {
+    background-color: #3a3737b0;
+    box-shadow: 0px 14px 24px -19px rgba(66, 68, 90, 1);
+  }
+}
+
+//heder
+
+.header_section {
+  overflow: hidden;
+  height: 100vh;
+  background-image: url(../img/góry.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a37377a;
+    width: 100%;
+    height: 100%;
+    &__title {
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 20px 100px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// about me
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 50px;
+  background-image: url(../img/camera.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    border-radius: 20px 100px;
+    overflow: hidden;
+  }
+
+  &__title {
+    h2 {
+      position: relative;
+      top: 100px;
+      color: white;
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__photo {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/robert.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    color: white;
+
+    p {
+      letter-spacing: 2px;
+      word-spacing: 1px;
+      font-size: 1.9rem;
+    }
+  }
+}
+
+//MEDIA
+
+@media (min-width: 400px) {
+  .skis {
+    .arrow {
+      top: 150%;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .nav {
+    &__mobile {
+      width: 500px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    &__container {
+      display: flex;
+    }
+  }
+
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: wrap;
+    }
+    &__information {
+      display: flex;
+      justify-content: center;
+
+      p {
+        padding: 40px;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .nav {
+    .burger-btn {
+      display: none;
+    }
+
+    &__items {
+      display: inline-block;
+    }
+  }
+
+  .ourSkis {
+    &__container {
+      flex-direction: row;
+    }
+
+    &__img {
+      width: 45vh;
+    }
+  }
+
+  .team {
+    &__left {
+      width: 50%;
+      height: 100%;
+      background-image: url(/img/team.webp);
+      background-size: cover;
+
+      &--mobile {
+        display: none;
+      }
+    }
+
+    &__right {
+      display: block;
+      position: static;
+      width: 50%;
+      margin: 300px 50px 0 50px;
+    }
+
+    h2 {
+      font-size: 4.8rem;
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 0;
+      color: white;
+      font-size: 2.4rem;
+    }
+  }
+}
