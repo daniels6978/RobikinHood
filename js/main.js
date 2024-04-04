@@ -14,13 +14,13 @@ const handleNav = () => {
   });
 };
 
-const handleObserver = () => {
-  const currentSection = window.scrollY;
+// const handleObserver = () => {
+//   const currentSection = window.scrollY;
 
-  if (currentSection >= 60) {
-    nav.classList.add("nav--active");
-  } else if (currentSection < 60) nav.classList.remove("nav--active");
-};
+//   if (currentSection >= 60) {
+//     nav.classList.add("nav--active");
+//   } else if (currentSection < 60) nav.classList.remove("nav--active");
+// };
 
 navBtn.addEventListener("click", handleNav);
 window, addEventListener("scroll", handleObserver);
