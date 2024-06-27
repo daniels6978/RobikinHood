@@ -428,6 +428,79 @@ body {
     font-family: "Courier New", Courier, monospace;
     color: $black;
   }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    background-color: $black;
+    color: white;
+
+    h3 {
+      margin: 50px;
+      font-size: 3.5rem;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .form_wrapper {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      .form {
+        width: 50%;
+        background-color: $black;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+
+          label {
+            padding: 10px;
+            font-size: 2rem;
+          }
+          input {
+            margin: 10px 30px;
+            padding: 10px 10px;
+            font-size: 2rem;
+            width: 50%;
+            background: none;
+            border: none;
+            border-bottom: 1px $theme solid;
+            color: white;
+            &:focus {
+              outline: none;
+            }
+          }
+          textarea {
+            margin: 10px 30px;
+            padding: 10px 10px;
+            font-size: 2rem;
+            width: 50%;
+            background: none;
+            border: none;
+            border-bottom: 1px $theme solid;
+            resize: none;
+            color: white;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .btn {
+            background-color: $theme;
+            width: 25%;
+          }
+        }
+      }
+
+      .forms_of_contact {
+        width: 50%;
+        // background-color: white;
+      }
+    }
+  }
 }
 
 //MEDIA

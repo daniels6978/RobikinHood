@@ -451,6 +451,87 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: #282828;
 }
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+  background-color: #282828;
+  color: white;
+}
+.contact__wrapper h3 {
+  margin: 50px;
+  font-size: 3.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.contact__wrapper .form_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.contact__wrapper .form_wrapper .form {
+  width: 50%;
+  background-color: #282828;
+}
+.contact__wrapper .form_wrapper .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.contact__wrapper .form_wrapper .form form label {
+  padding: 10px;
+  font-size: 2rem;
+}
+.contact__wrapper .form_wrapper .form form input {
+  margin: 10px 30px;
+  padding: 10px 10px;
+  font-size: 2rem;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px #9f7919 solid;
+  color: white;
+}
+.contact__wrapper .form_wrapper .form form input:focus {
+  outline: none;
+}
+.contact__wrapper .form_wrapper .form form textarea {
+  margin: 10px 30px;
+  padding: 10px 10px;
+  font-size: 2rem;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px #9f7919 solid;
+  resize: none;
+  color: white;
+}
+.contact__wrapper .form_wrapper .form form textarea:focus {
+  outline: none;
+}
+.contact__wrapper .form_wrapper .form form .btn {
+  background-color: #9f7919;
+  width: 25%;
+}
+.contact__wrapper .form_wrapper .forms_of_contact {
+  width: 50%;
+}
 
 @media (min-width: 400px) {
   .skis .arrow {
