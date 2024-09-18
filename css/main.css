@@ -528,9 +528,43 @@ body {
 .contact__wrapper .form_wrapper .form form .btn {
   background-color: #9f7919;
   width: 25%;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.contact__wrapper .form_wrapper .form form .btn:hover {
+  background-color: #7d5f14;
 }
 .contact__wrapper .form_wrapper .forms_of_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
   width: 50%;
+}
+.contact__wrapper .form_wrapper .forms_of_contact a {
+  margin-left: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.contact__wrapper .form_wrapper .forms_of_contact a img {
+  margin-right: 20px;
+}
+
+footer {
+  margin: auto;
+  height: 50px;
+  text-align: center;
+}
+footer p {
+  color: white;
 }
 
 @media (min-width: 400px) {

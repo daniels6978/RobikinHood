@@ -491,15 +491,45 @@ body {
           .btn {
             background-color: $theme;
             width: 25%;
+            border: none;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+              background-color: #7d5f14;
+            }
           }
         }
       }
 
       .forms_of_contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
         width: 50%;
-        // background-color: white;
+        a {
+          margin-left: 20px;
+          padding: 10px;
+          color: white;
+          font-size: 2rem;
+          text-decoration: none;
+          img {
+            margin-right: 20px;
+          }
+        }
       }
     }
+  }
+}
+
+// FOOTER
+
+footer {
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  p {
+    color: white;
   }
 }
 
