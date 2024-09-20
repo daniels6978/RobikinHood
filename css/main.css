@@ -89,7 +89,7 @@ body {
   transition: 0.5s;
 }
 .nav__item:hover {
-  background-color: #9f7919;
+  color: #9f7919;
 }
 .nav__mobile {
   position: fixed;
@@ -462,24 +462,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
   background-color: #282828;
   color: white;
 }
 .contact__wrapper h3 {
   margin: 50px;
   font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-family: "Courier New", Courier, monospace;
 }
 .contact__wrapper .form_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   width: 100%;
 }
 .contact__wrapper .form_wrapper .form {
-  width: 50%;
   background-color: #282828;
 }
 .contact__wrapper .form_wrapper .form form {
@@ -490,9 +494,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contact__wrapper .form_wrapper .form form label {
   padding: 10px;
@@ -501,8 +505,8 @@ body {
 .contact__wrapper .form_wrapper .form form input {
   margin: 10px 30px;
   padding: 10px 10px;
+  width: 80%;
   font-size: 2rem;
-  width: 50%;
   background: none;
   border: none;
   border-bottom: 1px #9f7919 solid;
@@ -514,8 +518,8 @@ body {
 .contact__wrapper .form_wrapper .form form textarea {
   margin: 10px 30px;
   padding: 10px 10px;
+  width: 80%;
   font-size: 2rem;
-  width: 50%;
   background: none;
   border: none;
   border-bottom: 1px #9f7919 solid;
@@ -544,8 +548,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-top: 50px;
-  width: 50%;
 }
 .contact__wrapper .form_wrapper .forms_of_contact a {
   margin-left: 20px;
@@ -559,8 +565,7 @@ body {
 }
 
 footer {
-  margin: auto;
-  height: 50px;
+  margin: 30px 0 10px;
   text-align: center;
 }
 footer p {
@@ -641,6 +646,31 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 30%;
+  }
+  .contact__wrapper .form_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__wrapper .form_wrapper .form {
+    width: 50%;
+    background-color: #282828;
+  }
+  .contact__wrapper .form_wrapper .form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .contact__wrapper .form_wrapper .form form input {
+    width: 50%;
+  }
+  .contact__wrapper .form_wrapper .form form textarea {
+    width: 50%;
   }
 }
 @media (min-width: 1100px) {
