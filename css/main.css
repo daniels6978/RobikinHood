@@ -74,7 +74,7 @@ body {
 .nav__items {
   display: none;
   position: relative;
-  left: 50%;
+  left: 20%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -481,22 +481,30 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  margin-top: 50px;
   width: 100%;
 }
 .contact__wrapper .form_wrapper .form {
-  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 50px;
 }
 .contact__wrapper .form_wrapper .form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 .contact__wrapper .form_wrapper .form form label {
   padding: 10px;
@@ -531,7 +539,7 @@ body {
 }
 .contact__wrapper .form_wrapper .form form .btn {
   background-color: #9f7919;
-  width: 25%;
+  width: 20%;
   border: none;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -553,14 +561,23 @@ body {
           align-items: start;
   margin-top: 50px;
 }
-.contact__wrapper .form_wrapper .forms_of_contact a {
+.contact__wrapper .form_wrapper .forms_of_contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact__wrapper .form_wrapper .forms_of_contact .container a {
   margin-left: 20px;
   padding: 10px;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
 }
-.contact__wrapper .form_wrapper .forms_of_contact a img {
+.contact__wrapper .form_wrapper .forms_of_contact .container a img {
   margin-right: 20px;
 }
 
@@ -654,23 +671,42 @@ footer p {
             flex-direction: row;
   }
   .contact__wrapper .form_wrapper .form {
+    margin-top: 0;
     width: 50%;
-    background-color: #282828;
   }
   .contact__wrapper .form_wrapper .form form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .contact__wrapper .form_wrapper .form form input {
     width: 50%;
   }
   .contact__wrapper .form_wrapper .form form textarea {
     width: 50%;
+  }
+  .contact__wrapper .form_wrapper .forms_of_contact {
+    width: 50%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-right: 100px;
+  }
+  .contact__wrapper .form_wrapper .forms_of_contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__wrapper .form_wrapper .forms_of_contact .container a {
+    font-size: 2rem;
   }
 }
 @media (min-width: 1100px) {

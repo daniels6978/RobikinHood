@@ -82,7 +82,7 @@ body {
   &__items {
     display: none;
     position: relative;
-    left: 50%;
+    left: 20%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -433,6 +433,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-color: $black;
     color: white;
 
@@ -447,14 +448,18 @@ body {
       display: flex;
       flex-direction: column;
       height: 100%;
+      margin-top: 50px;
       width: 100%;
-      .form {
-        background-color: $black;
 
+      .form {
+        display: flex;
+        align-items: start;
+        margin-top: 50px;
         form {
           display: flex;
+          width: 100%;
           flex-direction: column;
-          align-items: center;
+          justify-content: start;
 
           label {
             padding: 10px;
@@ -491,7 +496,7 @@ body {
 
           .btn {
             background-color: $theme;
-            width: 25%;
+            width: 20%;
             border: none;
             cursor: pointer;
             transition: 0.4s;
@@ -508,14 +513,19 @@ body {
         flex-direction: column;
         align-items: start;
         margin-top: 50px;
-        a {
-          margin-left: 20px;
-          padding: 10px;
-          color: white;
-          font-size: 2rem;
-          text-decoration: none;
-          img {
-            margin-right: 20px;
+
+        .container {
+          display: flex;
+          flex-direction: column;
+          a {
+            margin-left: 20px;
+            padding: 10px;
+            color: white;
+            font-size: 1.6rem;
+            text-decoration: none;
+            img {
+              margin-right: 20px;
+            }
           }
         }
       }
@@ -631,18 +641,30 @@ footer {
         flex-direction: row;
 
         .form {
+          margin-top: 0;
           width: 50%;
-          background-color: $black;
 
           form {
             flex-direction: column;
-            align-items: end;
+            align-items: start;
 
             input {
               width: 50%;
             }
             textarea {
               width: 50%;
+            }
+          }
+        }
+        .forms_of_contact {
+          width: 50%;
+          align-items: end;
+          margin-right: 100px;
+          .container {
+            display: flex;
+            flex-direction: column;
+            a {
+              font-size: 2rem;
             }
           }
         }
