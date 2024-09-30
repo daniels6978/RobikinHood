@@ -113,7 +113,7 @@ body {
           transform: translateX(-100%);
   -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  background-image: linear-gradient(45deg, rgb(39, 47, 59), rgb(32, 27, 59));
+  background-image: linear-gradient(45deg, rgb(6, 6, 4), rgb(46, 44, 2));
   z-index: 100;
 }
 .nav__mobile--item {
@@ -130,6 +130,7 @@ body {
 }
 .nav__mobile--item:hover {
   background-color: #9f7919;
+  color: #9f7919;
 }
 .nav__mobile--active {
   -webkit-transform: translateX(0);
@@ -332,7 +333,7 @@ body {
   text-align: center;
   padding: 10px;
 }
-.offer__wrapper .squer button {
+.offer__wrapper .squer a {
   padding: 15px 45px;
   margin: 20px;
   font-size: 1.8rem;
@@ -340,10 +341,11 @@ body {
   background-color: #9f7919;
   border: none;
   color: white;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.offer__wrapper .squer button:hover {
+.offer__wrapper .squer a:hover {
   background-color: #7d5f14;
 }
 .offer__wrapper .squer::before {
@@ -614,6 +616,39 @@ footer p {
   color: white;
 }
 
+.off_details .off_details__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding-top: 50px;
+}
+.off_details .off_details__wrapper .off_details_contents {
+  margin-top: 100px;
+  width: 100%;
+}
+.off_details .off_details__wrapper .off_details_contents h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  margin: 0 10px;
+}
+.off_details .off_details__wrapper .off_details_contents__description {
+  padding: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 9px;
+}
+.off_details .off_details__wrapper .off_details_contents__description p {
+  font-size: 2rem;
+}
+
 @media (min-width: 400px) {
   .skis .arrow {
     top: 150%;
@@ -732,6 +767,12 @@ footer p {
   }
   .contact__wrapper .form_wrapper .forms_of_contact .container a {
     font-size: 2rem;
+  }
+  .off_details .off_details__wrapper .off_details_contents {
+    padding: 100px;
+  }
+  .off_details .off_details__wrapper .off_details_contents h3 {
+    font-size: 4rem;
   }
 }
 @media (min-width: 1100px) {
