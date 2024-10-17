@@ -185,6 +185,15 @@ body {
   -webkit-filter: blur(0.5px);
           filter: blur(0.5px);
 }
+.header_section .header__title .logo_bck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
 .header_section .header__title h1 {
   text-align: center;
   font-size: 6rem;
@@ -647,6 +656,29 @@ footer p {
 }
 .off_details .off_details__wrapper .off_details_contents__description p {
   font-size: 2rem;
+}
+.off_details .off_details__wrapper .off_details_contents .fot_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 600px;
+}
+.off_details .off_details__wrapper .off_details_contents .fot_wrapper .foto {
+  height: 400px;
+  width: 300px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  margin-left: 50px;
+  float: left;
+}
+.off_details .off_details__wrapper .off_details_contents .fot_wrapper .foto img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (min-width: 400px) {
