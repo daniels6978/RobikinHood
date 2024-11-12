@@ -23,7 +23,7 @@ const handleNav = () => {
 // };
 
 navBtn.addEventListener("click", handleNav);
-window, addEventListener("scroll", handleObserver);
+// window.addEventListener("scroll", handleObserver);
 window.onload = () => {
   videoHeader.play();
 };
