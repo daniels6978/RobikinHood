@@ -649,7 +649,6 @@ footer p {
   height: 100%;
   width: 100%;
   background-color: #e6e6e6;
-  padding-top: 50px;
 }
 .off_details .off_details__wrapper .off_details_contents {
   margin-top: 100px;
@@ -703,7 +702,7 @@ footer p {
 }
 .off_details .down-arrow {
   position: absolute;
-  top: calc(100vh - 60px);
+  top: calc(100vh - 80px);
   left: calc(50% - 14px);
   width: 0;
   height: 30px;
